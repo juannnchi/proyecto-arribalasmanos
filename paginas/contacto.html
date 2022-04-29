@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arriba Las Manos</title>
+    <link rel="icon" type="image/x-icon" href="../imagenes/arribalasmanosblanco.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="../index.html">
+                <img class="menu__logo" src="../imagenes/arribalasmanosblanco.ico" alt="arribalasmanos">
+            </a>
+            <a class="header__open" href="#lateral">
+                <span class="jam jam-menu"></span>
+            </a>  
+            <nav class="menu__nav" id="lateral">
+                <ul class="menu__list">
+                    <li class="menu__items"><a href="../index.html">Inicio</a></li> 
+                    <li class="menu__items"><a href="musica.html">Música</a></li>
+                    <li class="menu__items"><a href="videos.html">Videos</a></li>
+                    <li class="menu__items"><a href="contacto.html">Contacto</a></li>
+                    <li class="menu__items"><a href="redes.html">Redes</a></li>
+                    <br>
+                    <li class="menu__items"><a href="#"><span class="jam jam-close-rectangle"></span></a></li>
+                </ul>
+            </nav>
+        </div>        
+    </header>
+<div class="contacto">
+    <form class="form" action="">
+        <h2>Contacto</h2>
+        <input type="text" id="nombre" placeholder="Ingrese su nombre"> <input type="text" id="email" placeholder="Ingrese su email">
+        <input type="number" id="telefono" placeholder="Ingrese su numero de telefono">
+        <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
+        <input id="boton" type="submit" value="Enviar">
+    </form>
+</div>
+
+    <footer>
+        <p>Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
