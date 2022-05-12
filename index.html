@@ -38,7 +38,32 @@
     <main class="main__padre">
         <div class="main">
             <h1 class="main__titulo">Somos "Arriba Las Manos"</h1>
-            <img class="main__imagen" src="imagenes/alasmanosindex2.jpeg" alt="arribalasmanos">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./imagenes/alasmanosindex.jpg" class="d-block w-100" alt="arribalasmanos">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imagenes/alasmanosbg.jpg" class="d-block w-100" alt="arribalasmanosbg">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imagenes/alasmanosbg2.jpg" class="d-block w-100" alt="arribalasmanosbg2">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             <p class="main__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi recusandae facere nulla eos et temporibus molestias culpa voluptatem mollitia? Nemo, nesciunt nam officia sit aliquam nostrum ab quisquam pariatur vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem a tempore quo dolorum aspernatur eligendi, possimus deleniti distinctio dolor eaque neque debitis assumenda consequatur numquam, sit sed delectus? Alias, enim? </p>
         </div>
     </main>
