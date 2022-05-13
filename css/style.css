@@ -4,13 +4,32 @@
     box-sizing: border-box;
 }
 body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(../imagenes/background/WhatsApp\ Image\ 2022-05-13\ at\ 6.19.28\ PM.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     background-color: #1e0645;
     color: white;
     font-family: 'Libre Baskerville', serif;
 }
 
+body::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #150430ce;
+    z-index: -1;
+}
+
 header {
-    background-color: #2e0374;
+    background-color: #1e06455b;
     width: 100%;
     position: fixed;
     top: 0%;
@@ -21,6 +40,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-left: 50px;
+    opacity: 1;
 }
 
 .menu__nav{
@@ -45,34 +65,35 @@ header {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: bold;;
 }
 
 .main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 150px;
-    width: 100%;
+    width: 800px;
+    margin-top: 140px;
+   
 }
+
 .main__titulo {
     text-align: center;
     margin-bottom: 50px;
-    font-size: 4vw;
-}
-
-.main__imagen {
-    width: 65vw;
-    max-width: 70vw;
-    min-width: 50vw;
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.19), 0 6px 6px rgba(255, 255, 255, 0.23);    
+    font-size: 50px;
 }
 
 .main__texto {
     display: block;
-    width: 70vw;
+    width: 100%;
     text-align: center;
     margin-top: 30px;
+}
+
+.main__padre {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
 }
 
 footer {
@@ -81,6 +102,18 @@ footer {
     font-size: smaller;
 }
 
+.spotify{
+    display: flex;
+    width: 100%;
+    margin-top: 200px;
+    justify-content: center;
+}
+
+.spotify__div {
+    display: flex;
+    width: 50%;
+    min-width: 320px;
+}
 
 .material{
     margin-bottom:50px; 
@@ -246,8 +279,13 @@ cursor: pointer;
         text-align: center;
     }
 
+    .main__image {
+        width: 400px;
+    }
+
     .main__texto{
-        width: 75vw;
+        width: 100%;
+        padding: 20px;
     }
 
     .main__titulo{
@@ -281,6 +319,7 @@ cursor: pointer;
 
     footer p{
         width: 100%;
+        text-align: center;
     }
 
     .contacto {
@@ -292,4 +331,8 @@ cursor: pointer;
         width: 80%;
     }
 
+    body{
+        background-size: cover;
+        background-attachment: scroll;
+    }
 }
