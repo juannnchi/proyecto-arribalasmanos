@@ -199,10 +199,14 @@ cursor: pointer;
     display: none;
 }
 
-.iframeta{
-    object-fit: contain;
+.redes__ico{
+    transition: 1.2s;
 }
 
+.redes__ico:hover{
+    width: 70px;
+    height: 70px;
+}
 
 /* media querys */
 
@@ -287,7 +291,5 @@ cursor: pointer;
     .form{
         width: 80%;
     }
-
-    
 
 }
