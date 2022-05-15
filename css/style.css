@@ -241,6 +241,29 @@ cursor: pointer;
     height: 70px;
 }
 
+.footer__redes {
+    margin: 0%
+}
+
+.footer__texto{
+   margin-bottom: 10px;
+   font-size: 15px;
+}
+
+.footer__div {
+    max-width: 800px;
+    min-width: 300px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 250px;
+}
+
+
+
 /* media querys */
 
 @media screen and (max-width:1023px) {
@@ -317,9 +340,18 @@ cursor: pointer;
     }
 
 
-    footer p{
-        width: 100%;
-        text-align: center;
+    footer{
+       flex-direction: column;
+       margin-top: 100px;
+       gap: 70px;
+    }
+
+    .footer__div{
+        min-width: 0;
+    }
+
+    .footer__ico{
+        display: none;
     }
 
     .contacto {
