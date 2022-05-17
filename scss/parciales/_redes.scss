@@ -1,0 +1,25 @@
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.redes__ico {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.footer__redes{
+    margin-top: 100px;
+}
+
+.redes__ico{
+    transition: 1.2s;
+}
+
+.redes__ico:hover{
+    width: 70px;
+    height: 70px;
+}

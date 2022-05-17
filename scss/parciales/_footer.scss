@@ -1,0 +1,26 @@
+footer {
+    text-align: center;
+    margin: 100px;
+    font-size: smaller;
+}
+
+.footer__redes {
+    margin: 0%
+}
+
+.footer__texto{
+   margin-bottom: 10px;
+   font-size: 15px;
+}
+
+.footer__div {
+    max-width: 800px;
+    min-width: 300px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 250px;
+}
