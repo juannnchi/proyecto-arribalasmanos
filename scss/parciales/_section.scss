@@ -39,3 +39,15 @@
 .section__div h3 {
     text-align: center;
 }
+
+$estilos (
+    ancho: 250px,
+    alto: 250px,
+    redondo: 50%,
+)
+
+.section__div {
+    width: map-get($estilos, ancho);
+    height: map-get($estilos, alto);
+    border-radius: map-get($estilos, redondo);
+}
