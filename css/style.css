@@ -191,6 +191,11 @@ cursor: pointer;
     text-align: center;
 }
 
+.section__titulo {
+    position: absolute;
+    top: 70px;
+}
+
 .section__img {
     width: 100%;
     height: 100%;
